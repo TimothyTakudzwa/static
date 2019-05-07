@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+
+
+@-webkit-keyframes float {
+  0% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+@-moz-keyframes float{
+  0% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+@keyframes float {
+  0% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+   
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+/* SVG Animation BG */
+/* Input Body tag with 'position: relative' property */
+/* set poroperties of the rest of the tags to 'position: absolute' */
+
+
+#mac-book{
+  -webkit-transform: translatey(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 5s ease-in-out infinite;
+  -moz-animation:  float 5s ease-in-out infinite;
+  -o-animation: float 5s ease-in-out infinite;
+          animation: float 5s ease-in-out infinite;
+}
+
+#pambeni-logo{
+  -webkit-transform: translatey(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 7s ease-in-out infinite;
+  -moz-animation:  float 7s ease-in-out infinite;
+  -o-animation: float 7s ease-in-out infinite;
+          animation: float 7s ease-in-out infinite;
+}
+
+/* Logo Preloader */
+
+.preloader{
+  background: #BFD7B5;
+  background: linear-gradient(135deg, #BFD7B5 0%, #0E5640 100%);
+  height: 100vh;
+  width: 100%;
+}
+
+.pre-wrapper{
+  margin:  auto;
+  padding: 25vh 0;
+  width: 25%;
+  height: auto;
+}
+.pr-ls{
+  stroke: #ffffff;
+  fill: none;
+}
+
