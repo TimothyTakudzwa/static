@@ -26,7 +26,6 @@ body {
   color: white;
   font-weight: 300;
   overflow: hidden;
-  background: url("../images/african's\ in\ meeting2.jpg");
   background-size: cover;
 }
 body ::-webkit-input-placeholder {
