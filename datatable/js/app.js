@@ -147,7 +147,7 @@ var table2 = $('#allocations').DataTable({
 
     table2.columns().eq(0).each(function (colIdx) {
         $('input', table2.column(colIdx).footer()).on('keyup change', function () {
-            table
+            table2
                 .column(colIdx)
                 .search(this.value)
                 .draw();
