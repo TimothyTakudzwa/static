@@ -78,54 +78,7 @@ $(document).ready(function () {
             visible: false
         }]
     });
-var table2 = $('#allocations').DataTable({
-        mark: true,
-        dom: 'Bfrtip',
-        lengthMenu: [
-            [10, 25, 50, 100, -1],
-            ['10 rows', '25 rows', '50 rows', '100 rows', 'Show All']
-        ],
-        buttons: [
-            'pageLength',
-            {
-                extend: 'copyHtml5',
-                exportOptions: {
-                    columns: ':visible'
-                }
-            },
-            {
-                extend: 'excelHtml5',
-                exportOptions: {
-                    columns: ':visible'
-                }
-            },
-            {
-                extend: 'csvHtml5',
-                exportOptions: {
-                    columns: ':visible'
-                }
-            },
-            {
-                extend: 'print',
-                exportOptions: {
-                    columns: ':visible'
-                }
-            },
-            {
-                extend: 'pdfHtml5',
-                download: 'open',
-                exportOptions: {
-                    columns: ':visible'
-                }
-            },
-            'colvis'
-        ],
-        columDefs: [{
-            targets: -1,
-            visible: false
-        }]
-    });
-    
+
     // 4) Search on Multiple Columns
     $('#maintable tfoot th').each(function () {
         var title = $('#maintable tfoot th').eq($(this).index()).text();
@@ -135,19 +88,6 @@ var table2 = $('#allocations').DataTable({
     table.columns().eq(0).each(function (colIdx) {
         $('input', table.column(colIdx).footer()).on('keyup change', function () {
             table
-                .column(colIdx)
-                .search(this.value)
-                .draw();
-        });
-    });
-     $('#allocations tfoot th').each(function () {
-        var title = $('#allocations tfoot th').eq($(this).index()).text();
-        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
-    });
-
-    table2.columns().eq(0).each(function (colIdx) {
-        $('input', table2.column(colIdx).footer()).on('keyup change', function () {
-            table2
                 .column(colIdx)
                 .search(this.value)
                 .draw();
