@@ -82,7 +82,7 @@ $(document).ready(function () {
     // 4) Search on Multiple Columns
     $('#maintable tfoot th').each(function () {
         var title = $('#maintable tfoot th').eq($(this).index()).text();
-        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+        $(this).html('<input type="text" class="form-control" placeholder="Search ' + title + '" />');
     });
 
     table.columns().eq(0).each(function (colIdx) {
